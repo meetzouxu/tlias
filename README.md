@@ -4,13 +4,13 @@ tlias 这个项目主要是用 SpringBoot 实现简单的员工和部门的增�
 
 来源：[黑马JavaWeb开发教程](https://www.bilibili.com/video/BV1m84y1w7Tb/?share_source=copy_web&vd_source=01b5eac057dbbcc3bd810b2f249c3420)
 
-![[Image/Pasted image 20240724184448.png]]
+![](Image/Pasted image 20240724184448.png)
 
 ## 1.1 Submodule Design
 
 将模块全部放在一个 Java 项目里不便于维护和复用，分模块设计方便项目的扩展，以及资源调用。
 
-![[Image/Pasted image 20240724185857.png]]
+![](Image/Pasted image 20240724185857.png)
 
 # 2 Environment
 
@@ -66,8 +66,6 @@ INSERT INTO emp
 ## 2.2 Create SpringBoot Project
 
 创建springboot工程，引入对应的起步依赖（Spring Web、MyBatis Framework、MySQL Driver、Lombok）
-
-详情参考：[[Java/Java Language/Java Web/05-SpringBoot|05-SpringBoot]]
 
 ## 2.3 Mybatis Configuation
 
@@ -382,7 +380,7 @@ public interface DeptMapper {
 
 ### 4.1.1 Postman
 
-![[Image/Pasted image 20240703153400.png]]
+![](Image/Pasted image 20240703153400.png)
 
 - 使用nginx可以实现前后端联调。解压压缩包，启动nginx，访问测试：[http://localhost:90](http://localhost:90/)
 
@@ -1024,7 +1022,7 @@ public interface EmpMapper {
 2. namespace 和接口全类名（右键 copy reference）一致
 3. id、返回和接口中的方法名、返回类型一致
 
-![[Image/Pasted image 20240704155256.png]]
+![](Image/Pasted image 20240704155256.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -1783,7 +1781,7 @@ public interface EmpMapper {
 
 现有的登陆机制存在问题：在未登录的情况下，我们也可以直接访问部门管理、员工管理等功能。
 
-![[Image/Pasted image 20240708185817.png]]
+![](Image/Pasted image 20240708185817.png)
 
 ### 8.2.1 Cookie and Session
 
@@ -1799,7 +1797,7 @@ public interface EmpMapper {
 
 **Cookie**：
 
-![[Image/图片2.png]]
+![](Image/图片2.png)
 
 - 优点：HTTP协议中支持的技术（放在HTTP请求和响应头里）
 - 缺点：
@@ -1877,7 +1875,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJleHAiOjE3MjA1MTk4NzIsInVzZXJuYW1lIjoiemhhbmd
 
 Decoded：
 
-![[Image/Pasted image 20240709171443.png]]
+![](Image/Pasted image 20240709171443.png)
 
 - 校验JWT
 
@@ -1971,7 +1969,7 @@ public class LoginController {
 
 过滤器一般完成一些通用的操作，比如：登录校验、统一编码处理、敏感字符处理等。
 
-![[Image/Pasted image 20240709184512.png]]
+![](Image/Pasted image 20240709184512.png)
 ### 8.3.1 Demo Filter
 
 定义Filter：定义一个类，实现 Filter 接口，并重写其所有方法。
@@ -2102,7 +2100,7 @@ public class LoginCheckFilter implements Filter {
 
 作用：拦截请求，在指定的方法调用前后，根据业务需要执行预先设定的代码。
 
-![[Image/Pasted image 20240710145815.png]]
+![](Image/Pasted image 20240710145815.png)
 ### 8.4.1 Demo Interceptor
 
 拦截器是一种动态拦截方法调用的机制，类似于过滤器。Spring框架中提供的，用来动态拦截控制器方法的执行。
