@@ -1653,8 +1653,8 @@ private String bucketName = "web-tlias-zouxu";
 ```properties
 # 阿里云OSS配置  
 aliyun.oss.endpoint=https://oss-cn-hangzhou.aliyuncs.com  
-# aliyun.oss.accessKeyId=LTAI5tFBLg3K9cqehYvLdT1t  
-# aliyun.oss.ccessKeySecret=had3BW3uYHkXIxF1H9IMH2O9bbbq3j  
+# aliyun.oss.accessKeyId=XXX
+# aliyun.oss.ccessKeySecret=XXX
 aliyun.oss.bucketName=web-tlias-zouxu
 ```
 
